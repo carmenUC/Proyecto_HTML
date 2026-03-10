@@ -30,15 +30,30 @@
 </head>
 
 <body>
-  <header>
-    <h1>Tarea 12.1</h1>
-    <p><a href="index.html">👈 Volver atrás</a></p>
-    <hr />
+   <header>
+    <h1>Conquer Blocks Academy</h1>
+        <img src="./imagenes/logo_conquerblocks.avif" alt="CBAcademy">
+        <hr />
+        <nav>
+            <h2>Menú</h2>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="quienes_somos.html">Quienes somos</a></p>
+            <p><a href="cursos.html">Cursos</a></p>
+            <p><a href="blog.html">Blog</a></p>
+            <p><a href="registro.html">Registro</a></p>
+            <p><a href="login.html">Log-in</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+            <p><a href="aviso_legal.html">Aviso Legal</a></p>
+        </nav>
+        <hr>
   </header>
 
   <main>
-    <h2>Formulario de registro - Mi Web</h2>
+    <h2>Registro Alumnado Conquer Blocks</h2>
     <form action="" method="get">
+      <fieldset>
+        <legend>Datos personales</legend>
+      
       <p>
         <label for="name">Nombre: </label>
         <input type="text" name="nombre" id="name" maxlength="50">
@@ -50,38 +65,66 @@
       </p>
 
       <p>
-        Sexo:<br>
-        <input type="radio" name="sexo" value="h" id="man">
-        <label for="man">Hombre</label><br>
-        <input type="radio" name="sexo" value="m" id="woman">
-        <label for="woman">Mujer</label><br>
+        <label for="nac">Fecha de Nacimiento:</label>
+        <input type="date" name="nacimiento" id="nac">
       </p>
-
+      </fieldset>
+     
+    
       <p>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-      </p>
-
-      <p>
-        <label for="poblacion">Población</label>
-        <select name="poblacion" id="poblacion">
+        <fieldset>
+          <legend>Dirección</legend>
+        
+        <label for="calle">Calle:</label>
+        <input type="text" name="calle" id="calle">
+        <label for="n">Número:</label>
+        <input type="number" name="n" id="n" size="5" min="1" max="500"> <br>
+        <br>
+        <label for="cp">Código postal:</label>
+        <input type="number" name="cp" id="cp" max="5" size="5">
+        <label for="prov">Provincia:</label>
+        <select name="prov" id="prov">
           <option value="">-</option>
           <option value="A">Alicante</option>
           <option value="M">Madrid</option>
           <option value="S">Sevilla</option>
           <option value="V">Valencia</option>
+          <option value="L">Lugo</option>
+          <option value="Ou">Ourense</option>
+          <option value="M">Malaga</option>
         </select>
+        </fieldset>
+      </p>
+      <fieldset>
+        <legend>Contacto</legend>
+        <p>
+          <label for="tlf">Teléfono:</label>
+          <input type="text" name="tlf" id="tlf" max="9" size="9">
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+        </p>
+
+      </fieldset>
+      <fieldset>
+        <legend>Sobre ti</legend>
+      
+      <p>
+        <label for="www">Url:</label>
+        <input type="url" name="www" id="www">
       </p>
 
       <p>
-        <label for="descripcion">Descripción</label><br>
-        <textarea name="descripcion" id="descripcion" cols="30" rows="5" placeholder="Escribe aquí el contenido de tu consulta"></textarea>
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto">
       </p>
 
       <p>
-        <input type="checkbox" name="news" id="news" checked>
-        <label for="news">Deseo recibir información sobre novedades y ofertas</label>
+        <label for="bio">Bio</label><br>
+        <textarea name="bio" id="bio" cols="40" rows="7" placeholder="Háblanos un poco sobre ti"></textarea>
       </p>
+      </fieldset>
       
       <p>
         <input type="checkbox" name="privacy" id="privacy" required>
@@ -96,8 +139,8 @@
   </main>
 
   <hr>
-  <footer>
-    © ConquerBlocks 2023 - Todos los derechos reservados
+ <footer>
+    © 2026 - ConquerX - <a href="aviso_legal.html">Aviso Legal</a>
   </footer>
 </body>
 

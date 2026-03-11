@@ -47,26 +47,29 @@
 
 <body>
    <header>
-    <h1>Conquer Blocks Academy</h1>
-        <img src="./imagenes/logo_conquerblocks.avif" alt="CBAcademy">
-        <hr />
-        <nav>
-            <h2>Menú</h2>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="quienes_somos.html">Quienes somos</a></p>
-            <p><a href="cursos.html">Cursos</a></p>
-            <p><a href="blog.html">Blog</a></p>
-            <p><a href="registro.html">Registro</a></p>
-            <p><a href="login.html">Log-in</a></p>
-            <p><a href="contacto.html">Contacto</a></p>
-            <p><a href="aviso_legal.html">Aviso Legal</a></p>
-        </nav>
-        <hr>
+    <figure>
+      <img src="./imagenes/common/logo_conquerblocks.avif" alt="CBAcademy">
+    </figure>
+    <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quienes_somos.html">Quienes somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>Registro</li>
+          <li><a href="login.html">Log-in</a></li>
+          <li><a href="contacto.html">Contaco</a></li>
+        </ul>
+      </nav>
+    <hr>
   </header>
 
   <main>
-    <h2>Registro Alumnado Conquer Blocks</h2>
-    <form action="" method="get">
+    <h1>Registro</h1>
+    <p>Acceso alumnado Conquer Blocks</p>
+    <form action="" method="post" name="registro" enctype="multipart/form-data">
+      <p>
       <fieldset>
         <legend>Datos personales</legend>
       
@@ -85,32 +88,39 @@
         <input type="date" name="nacimiento" id="nac">
       </p>
       </fieldset>
+      </p>
      
-    
-      <p>
         <fieldset>
           <legend>Dirección</legend>
-        
+        <p>
         <label for="calle">Calle:</label>
         <input type="text" name="calle" id="calle">
-        <label for="n">Número:</label>
-        <input type="number" name="n" id="n" size="5" min="1" max="500"> <br>
-        <br>
+        </p>
+        
+        <p><label for="n">Número:</label>
+        <input type="number" name="n" id="n" size="5" min="1" max="500">
+        </p>
+        
+        <p>
         <label for="cp">Código postal:</label>
         <input type="number" name="cp" id="cp" max="5" size="5">
-        <label for="prov">Provincia:</label>
-        <select name="prov" id="prov">
-          <option value="">-</option>
-          <option value="A">Alicante</option>
-          <option value="M">Madrid</option>
-          <option value="S">Sevilla</option>
-          <option value="V">Valencia</option>
-          <option value="L">Lugo</option>
-          <option value="Ou">Ourense</option>
-          <option value="M">Malaga</option>
-        </select>
+        </p>
+        
+        <p>
+          <label for="prov">Provincia:</label>
+          <select name="prov" id="prov">
+            <option value="">-</option>
+            <option value="A">Alicante</option>
+            <option value="M">Madrid</option>
+            <option value="S">Sevilla</option>
+            <option value="V">Valencia</option>
+            <option value="L">Lugo</option>
+            <option value="Ou">Ourense</option>
+            <option value="M">Malaga</option>
+          </select>
+        </p>
         </fieldset>
-      </p>
+    
       <fieldset>
         <legend>Contacto</legend>
         <p>
@@ -126,20 +136,20 @@
       <fieldset>
         <legend>Sobre ti</legend>
       
-      <p>
-        <label for="www">Url:</label>
-        <input type="url" name="www" id="www">
-      </p>
+        <p>
+          <label for="www">Url:</label>
+          <input type="url" name="www" id="www">
+        </p>
 
-      <p>
-        <label for="foto">Foto:</label>
-        <input type="file" name="foto" id="foto">
-      </p>
+        <p>
+          <label for="foto">Foto:</label>
+          <input type="file" name="foto" id="foto">
+        </p>
 
-      <p>
-        <label for="bio">Bio</label><br>
-        <textarea name="bio" id="bio" cols="40" rows="7" placeholder="Háblanos un poco sobre ti"></textarea>
-      </p>
+        <p>
+          <label for="bio">Bio</label><br>
+          <textarea name="bio" id="bio" cols="40" rows="7" placeholder="Háblanos un poco sobre ti"></textarea> <br>
+        </p>
       </fieldset>
       
       <p>
@@ -153,6 +163,7 @@
 
       <p>
         <button>Enviar</button>
+        <input type="reset" value="Borrar formulario">
       </p>
     </form>
 
